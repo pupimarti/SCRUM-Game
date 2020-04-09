@@ -1,0 +1,32 @@
+.content-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: left;
+    align-items: center;
+    width: 60%;
+}
+
+.content-description > p{
+    font-size: 1.3em;
+}
+
+.icon{
+    margin:5px;
+}
+
+.phones{
+    width: 50%;
+}
+
+@media (max-width:800px){
+    .content-description{
+        justify-content: center;
+        width: 100%;
+    }
+    .content-description{
+        text-align: center;
+    }
+    .phones{
+        display: none;
+    }
+}

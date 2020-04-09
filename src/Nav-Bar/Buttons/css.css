@@ -1,0 +1,48 @@
+.button-login, .button-signup{
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 1em;
+    min-width: 200px;
+}
+
+.button-login{
+    margin-left: 10px;
+    color: #fff;
+    border-color: rgb(14, 64, 117);
+    background: linear-gradient(90deg, #1F76D1 0%, #2d9ceb 100%);
+}
+
+.button-signup{
+    background:transparent;
+    border-color: #5c1175;
+    color: #fff;
+    border-width: 1px 1px 4px;
+}
+
+
+@media (max-width: 850px){
+    .buttons{
+        background: linear-gradient(90deg, #ab31d4 0%, hsl(338, 78%, 48%) 100%);
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left:0;
+        width: 100%;
+        top: 80px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        transition: ease 0.3s;
+        transform: translateX(100%);
+    }
+    
+    .button-login, .button-signup{
+        margin:5px 0;
+        width: 100%;
+    }
+
+    .buttons.toggle{
+        transform: translateX(0%);
+    }
+}

@@ -1,30 +1,35 @@
 import React, {useState, useEffect} from 'react'
 import './css.css';
 import logo from './logo2.png'
+import Buttons from './Buttons'
+import Burger from './Burger'
 
 export default function Nav() {
 
     const [visible, setVisible] = useState(window.scrollY > (window.innerHeight/2));
-        
 
-    const handleScroll = () => 
-    {
-        setVisible(window.scrollY > (window.innerHeight/2));
-}
+    const handleScroll = () => setVisible(window.scrollY > (window.innerHeight/2));
 
-    useEffect(()=> {
-        window.addEventListener('scroll', handleScroll);
-    });
+    useEffect(()=> window.addEventListener('scroll', handleScroll));
+
+    const [classButtons, setClassButtons] = useState('');
+
+    const onClickBurger = () => {
+        if(classButtons === '') {
+            setClassButtons('toggle');
+        }
+        else{
+            setClassButtons('');
+        }
+    }
 
     if(visible){
         return (
             <div className="content-nav">
                 <div className="content-width nav">
                     <img className="logo" src={logo} alt="SCRUM Game" />
-                    <div className="buttons">
-                        <button className="button button-signup">REGISTRARSE</button>
-                        <button className="button button-login">INICIAR SESIÓN</button>
-                    </div>
+                    <Buttons classButtons={classButtons}/>
+                    <Burger onClickBurger={onClickBurger} />
                 </div>
             </div>
         )

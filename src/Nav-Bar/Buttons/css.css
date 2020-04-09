@@ -7,10 +7,8 @@
 
 .button-login{
     margin-left: 10px;
-    color: #fff;
-    border-color: rgb(14, 64, 117);
-    background: linear-gradient(90deg, #1F76D1 0%, #2d9ceb 100%);
 }
+
 
 .button-signup{
     background:transparent;

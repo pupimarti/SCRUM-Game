@@ -22,10 +22,8 @@ export default function Nav() {
             setClassButtons('');
         }
     }
-
-    if(visible){
         return (
-            <div className="content-nav">
+            <div className={visible ? "content-nav":"invisible"} >
                 <div className="content-width nav">
                     <img className="logo" src={logo} alt="SCRUM Game" />
                     <Buttons classButtons={classButtons}/>
@@ -33,6 +31,4 @@ export default function Nav() {
                 </div>
             </div>
         )
-    }
-    else return null;
 }

@@ -10,7 +10,7 @@ export default function Header() {
                     <img className="img-scrum" src={img} alt="Imagen SCRUM"/>
                     <div className="content-button-text">
                         <h2 className="sentence">¡Aprende SCRUM jugando!</h2>
-                        <button className="button button-header">¿QUE ES SCRUM?</button>
+                        <button className="button white button-header">¿QUE ES SCRUM?</button>
                     </div>
                 </div>
             </div>

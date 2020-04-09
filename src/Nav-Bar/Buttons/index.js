@@ -5,7 +5,7 @@ export default function Buttons(props) {
     return (
         <div className={"buttons " + props.classButtons}>
             <button className="button button-signup">REGISTRARSE</button>
-            <button className="button button-login">INICIAR SESIÓN</button>
+            <button className="button white button-login">INICIAR SESIÓN</button>
         </div>
     )
 }

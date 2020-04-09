@@ -6,11 +6,11 @@ export default function WhatIsIt() {
     return (
         <section className="content-section">
             <div className="content-width">
-                <div class = "title">
+                <div className= "title">
                     <h2>¿Qué es Scrum Game?</h2>
                 </div> 
-                    <div class = "displayFlex">
-                        <div class = "displayColumn" >
+                    <div className= "displayFlex">
+                        <div className = "displayColumn" >
                             <h3>Aprende de forma inteligente</h3>
                             <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in massa egestas mollis varius;
                                 dignissim elementum. Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula ornare.
@@ -21,8 +21,8 @@ export default function WhatIsIt() {
                                 dignissim elementum. Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula ornare.. 
                             </p>
                         </div>
-                        <div class = "displayColumn">
-                            <img class = "imgScrum" src={img} alt="Scrum"/>
+                        <div className="displayColumn">
+                            <img className="imgScrum" src={img} alt="Scrum"/>
                         </div>
                     </div>
             </div>

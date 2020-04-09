@@ -1,5 +1,6 @@
 .content-nav{    
     background: linear-gradient(90deg, #ab31d4 0%, hsl(338, 78%, 48%) 100%);
+    
     width: 100%;
     position: fixed;
     top:0;

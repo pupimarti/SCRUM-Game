@@ -31,6 +31,7 @@
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
+        transition: ease 0.3s;
         transform: translateX(100%);
     }
     
@@ -40,8 +41,6 @@
     }
 
     .buttons.toggle{
-        
-        transition: ease 0.3s;
         transform: translateX(0%);
     }
 }

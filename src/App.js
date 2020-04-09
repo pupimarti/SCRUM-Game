@@ -1,10 +1,17 @@
 import React from 'react';
 import './App.css';
+import Header from './Header';
+import Nav from './Nav-Bar';
+import Body from './Body';
+
 
 function App() {
+
   return (
     <div>
-      <h1>SCRUM Game</h1>
+      <Nav />
+      <Header />
+      <Body />
     </div>
   );
 }

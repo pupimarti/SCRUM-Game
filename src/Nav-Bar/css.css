@@ -1,0 +1,43 @@
+.content-nav{    
+    background: linear-gradient(90deg, #ab31d4 0%, hsl(338, 78%, 48%) 100%), url(//d35aaqx5ub95lt.cloudfront.net/images/star-pattern.svg);
+    width: 100%;
+    position: fixed;
+    top:0;
+    display:flex;
+    color:#fff;
+    padding-top: 8px;
+    transition: ease-in 0.3s;
+}
+
+.nav{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.button-login, .button-signup{
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 1em;
+    min-width: 200px;
+}
+
+.button-login{
+    margin-left: 10px;
+    color: #fff;
+    border-color: rgb(14, 64, 117);
+    background: linear-gradient(90deg, #1F76D1 0%, #2d9ceb 100%);
+}
+
+.button-signup{
+    background:transparent;
+    border-color: #5c1175;
+    color: #fff;
+    border-width: 1px 1px 4px;
+}

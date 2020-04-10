@@ -1,0 +1,40 @@
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.displayFlex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.displayColumn {
+    width: 40%;
+}
+
+.displayColumn > h3{
+    font-size: 1.5em;
+}
+.displayColumn > p{
+    font-size: 1.2em;
+}
+
+.imgScrum {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 25px;
+}
+
+@media (max-width: 1000px){
+    .displayColumn {
+        width: 100%;
+    }
+    
+}
+
+

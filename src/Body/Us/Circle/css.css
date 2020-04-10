@@ -1,0 +1,45 @@
+.circle{
+    margin: 50px;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+
+.name{
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+.position{
+    color: #aaa;
+    margin: 0;
+}
+
+.img-member{
+    border-radius: 50%;
+    width: 150px;
+    transition: all ease 0.5s;
+    filter: grayscale(30%);
+}
+
+.img-member:hover{
+    width: 160px;
+    cursor: pointer;
+}
+
+.circle:hover{
+    margin: 40px;
+}
+
+.circle.circle.show{
+    margin:10px;
+}
+
+.circle.show .img-member{    
+    width: 200px;
+    -webkit-filter: drop-shadow(0 0 7px #8e2baf);
+    filter: drop-shadow(0 0 7px #8e2baf);
+}
+
+.circle.show .img-member:hover{
+    width: 200px;
+}

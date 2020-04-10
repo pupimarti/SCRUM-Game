@@ -6,7 +6,7 @@ export default function WhatIsIt() {
     return (
         <section className="content-section" 
         data-aos="fade-up" 
-        data-aos-delay="500"
+        data-aos-offset="300"
         data-aos-duration="1000" >
             <div className="content-width">
                 <div className= "title">

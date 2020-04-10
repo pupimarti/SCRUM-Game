@@ -1,11 +1,12 @@
 import React from 'react'
 import './css.css';
 import img from './scrumImage.png'
+import { Element } from 'react-scroll';
 
 export default function WhatIsIt() {
     return (
-        <section className="content-section" 
-        data-aos="fade-up" 
+        <Element name="WhatItIs" className="content-section" 
+        data-aos="fade-left" 
         data-aos-offset="300"
         data-aos-duration="1000" >
             <div className="content-width">
@@ -29,6 +30,6 @@ export default function WhatIsIt() {
                         </div>
                     </div>
             </div>
-        </section>
+        </Element>
     )
 }

@@ -1,7 +1,17 @@
 import React from 'react'
 import './css.css';
 import img from './scrum3.png'
+import { scroller } from 'react-scroll';
 
+const scrollType = {
+    duration: 1000,
+    smooth: true, // linear “easeInQuint” “easeOutCubic” 
+    offset: -50,
+ };
+
+const onClickWhatItIs = () => {
+    scroller.scrollTo("WhatItIs", scrollType);
+}
 
 export default function Header() {
     return (
@@ -23,7 +33,7 @@ export default function Header() {
                     >
                         <h2 className="sentence" >¡El juego ideal para aprender SCRUM!</h2>
                         <div className="content-buttons-header">
-                            <button className="button white button-header">¿QUE ES SCRUM GAME?</button>
+                            <button className="button white button-header" onClick={onClickWhatItIs}>¿QUE ES SCRUM GAME?</button>
                             <button className="button transparent button-header-login">COMENZAR A JUGAR</button>
                         </div>
                     </div>

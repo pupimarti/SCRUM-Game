@@ -9,15 +9,6 @@
     margin-left: 10px;
 }
 
-
-.button-signup{
-    background:transparent;
-    border-color: #5c1175;
-    color: #fff;
-    border-width: 1px 1px 4px;
-}
-
-
 @media (max-width: 850px){
     .buttons{
         background: linear-gradient(90deg, #ab31d4 0%, hsl(338, 78%, 48%) 100%);

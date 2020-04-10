@@ -66,8 +66,16 @@ h2{
   transition: all ease 0.5s;
 }
 
-.button.white:hover{
+.button.white:hover, .button.transparent:hover{
   color:#fff;
-  background: linear-gradient(90deg, rgba(216,27,96,1)  0%, rgba(171,49,212,1) 100%);
+  border-color: #921bb9;
+  background-color: #5c1175;
+}
+
+.button.transparent{
+  background:transparent;
+  border-color: #5c1175;
+  color: #fff;
+  border-width: 1px 1px 4px;
 }
 

@@ -35,8 +35,15 @@
     font-size: 2em;
 }
 
-.button-header{
-    min-width: 300px;
+.button-header-login{
+    margin-top: 10px;
+}
+
+.content-buttons-header{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 @media (max-width: 1000px){

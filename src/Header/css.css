@@ -55,3 +55,15 @@
         width: 300px;
     }
 }
+
+@media (max-width: 600px){
+    .img-scrum{
+        width: 200px;
+    }
+    .sentence{
+        font-size: 1.5em;
+    }
+    .content-buttons-header{
+        font-size: 0.8em;
+    }
+}

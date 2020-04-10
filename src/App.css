@@ -22,6 +22,12 @@ h2{
   margin:20px 0;
 }
 
+@media(max-width:600px){
+  h2{
+    font-size: 2em;
+  }
+}
+
 .button{
   font-family: 'Baloo Thambi 2', cursive;
   border: 1px solid #000;

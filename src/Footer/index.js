@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="content-width content-footer">
                 <div className="content-comenzar">
                     <h4 className="txt-comenza">¿Que estás esperando?</h4>
-                    <button className="button white">COMENZAR</button>
+                    <button className="button white">COMENZAR A JUGAR</button>
                 </div>
 
                 <div className="footer-f">

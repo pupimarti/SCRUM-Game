@@ -7,7 +7,7 @@ import img from './img.png';
 export default function Stores() {
     return (
         <section className="content-width content-section"
-            data-aos="fade-up" 
+            data-aos="fade-left" 
             data-aos-offset="300"
             data-aos-duration="1000" 
             >

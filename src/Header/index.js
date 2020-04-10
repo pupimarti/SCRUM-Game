@@ -21,7 +21,7 @@ export default function Header() {
                     data-aos-delay="1500"
                     data-aos-duration="1000" 
                     >
-                        <h2 className="sentence" >¡Aprende SCRUM jugando!</h2>
+                        <h2 className="sentence" >¡El juego ideal para aprender SCRUM!</h2>
                         <button className="button white button-header">¿QUE ES SCRUM?</button>
                     </div>
                 </div>

@@ -26,6 +26,9 @@
     .content-description{
         text-align: center;
     }
+    .content-description > p{
+        text-align: start;
+    }
     .phones{
         display: none;
     }

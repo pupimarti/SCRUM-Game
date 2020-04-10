@@ -30,7 +30,7 @@
     margin: 40px;
 }
 
-.circle.circle.show{
+.circle.show{
     margin:10px;
 }
 
@@ -42,4 +42,34 @@
 
 .circle.show .img-member:hover{
     width: 200px;
+}
+
+@media(max-width:600px){
+    .circle{
+        margin:30px;
+    }
+    .circle:hover{
+        margin:30px;
+    }
+    .img-member{
+        width: 100px;
+    }
+    .img-member:hover{
+        width: 100px;
+    }
+    .circle.show{
+        margin:0;
+    }
+    .circle.show:hover{
+        margin:0;
+    }
+    .circle.show .img-member{    
+        width: 130px;
+        -webkit-filter: drop-shadow(0 0 7px #8e2baf);
+        filter: drop-shadow(0 0 7px #8e2baf);
+    }
+    
+    .circle.show .img-member:hover{
+        width: 130px;
+    }
 }

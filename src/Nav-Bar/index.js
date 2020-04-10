@@ -22,8 +22,12 @@ export default function Nav() {
             setClassButtons('');
         }
     }
+    if(!visible) return null;
+    else
         return (
-            <div className={visible ? "content-nav":"invisible"} >
+            <div className="content-nav"
+                data-aos="fade-down" 
+                data-aos-duration="1000">
                 <div className="content-width nav">
                     <img className="logo" src={logo} alt="SCRUM Game" />
                     <Buttons classButtons={classButtons}/>

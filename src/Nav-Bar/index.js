@@ -5,12 +5,16 @@ import Buttons from './Buttons'
 import Burger from './Burger'
 
 export default function Nav() {
-
     const [visible, setVisible] = useState(window.scrollY > (window.innerHeight/2));
 
     const handleScroll = () => setVisible(window.scrollY > (window.innerHeight/2));
 
-    useEffect(()=> window.addEventListener('scroll', handleScroll));
+    useEffect(()=> {
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+          }
+    }, []);
 
     const [classButtons, setClassButtons] = useState('');
 
@@ -22,7 +26,7 @@ export default function Nav() {
             setClassButtons('');
         }
     }
-    if(!visible) return null;
+    if(!visible) return null 
     else
         return (
             <div className="content-nav"

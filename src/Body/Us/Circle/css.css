@@ -36,8 +36,8 @@
 
 .circle.show .img-member{    
     width: 200px;
-    -webkit-filter: drop-shadow(0 0 7px #8e2baf);
-    filter: drop-shadow(0 0 7px #8e2baf);
+    -webkit-filter: drop-shadow(0 0 7px #400a52);
+    filter: drop-shadow(0 0 7px #400a52);
 }
 
 .circle.show .img-member:hover{
@@ -58,18 +58,50 @@
         width: 100px;
     }
     .circle.show{
-        margin:0;
+        margin:10px;
+        transition: 0.3s ease;
     }
     .circle.show:hover{
-        margin:0;
+        margin:10px;
     }
     .circle.show .img-member{    
-        width: 130px;
+        width: 120px;
         -webkit-filter: drop-shadow(0 0 7px #8e2baf);
         filter: drop-shadow(0 0 7px #8e2baf);
     }
     
     .circle.show .img-member:hover{
         width: 130px;
+    }
+}
+
+@media(max-width:350px){
+    .circle{
+        margin:20px;
+    }
+    .circle:hover{
+        margin:20px;
+    }
+    .img-member{
+        width: 80px;
+    }
+    .img-member:hover{
+        width: 80px;
+    }
+    .circle.show{
+        margin:0;
+        transition: 0s ease;
+    }
+    .circle.show:hover{
+        margin:0;
+    }
+    .circle.show .img-member{    
+        width: 100px;
+        -webkit-filter: drop-shadow(0 0 7px #8e2baf);
+        filter: drop-shadow(0 0 7px #8e2baf);
+    }
+    
+    .circle.show .img-member:hover{
+        width: 100px;
     }
 }

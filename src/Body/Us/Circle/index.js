@@ -14,6 +14,7 @@ export default function Circle(props) {
                 <img className="img-member" src={props.img} alt="Imágen del integrante"/>
                 <div className="info-member"
                     data-aos="fade-down" 
+                    data-aos-offset="-200"
                     data-aos-duration="500">
                     <p className="name">{props.name}</p>
                     <p className="position">{props.position}</p>

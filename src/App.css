@@ -2,10 +2,6 @@ html, body{
   font-family: 'Baloo Thambi 2', cursive;
   padding: 0;
   margin: 0;
-<<<<<<< HEAD
-=======
-  overflow-x: hidden;
->>>>>>> dedd3f93673e0c8d88b8ddc91bedd5dd3a742793
 }
 
 .content-width{
@@ -76,8 +72,6 @@ h2{
   transition: all ease 0.5s;
 }
 
-<<<<<<< HEAD
-=======
 *::selection{
   background-color: #921bb9;
   color: #fff;
@@ -96,7 +90,6 @@ h2{
 }
  
 
->>>>>>> dedd3f93673e0c8d88b8ddc91bedd5dd3a742793
 .button.white:hover, .button.transparent:hover{
   color:#fff;
   border-color: #921bb9;

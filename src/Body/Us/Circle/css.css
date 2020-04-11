@@ -1,0 +1,112 @@
+.circle{
+    margin: 50px;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+
+.name{
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+.position{
+    color: #aaa;
+    margin: 0;
+}
+
+.img-member{
+    border-radius: 50%;
+    width: 150px;
+    transition: all ease 0.5s;
+    filter: grayscale(50%);
+}
+
+.img-member:hover{
+    width: 160px;
+    cursor: pointer;
+}
+
+.circle:hover{
+    margin: 40px;
+}
+
+.circle.show{
+    margin:10px;
+}
+
+.circle.show .img-member{    
+    width: 200px;
+    -webkit-filter: drop-shadow(0 0 7px #400a52);
+    filter: drop-shadow(0 0 7px #400a52);
+}
+
+.circle.show .img-member:hover{
+    width: 200px;
+}
+
+@media(max-width:600px){
+    .circle{
+        margin:30px;
+    }
+    .circle:hover{
+        margin:30px;
+    }
+    .img-member{
+        width: 100px;
+    }
+    .img-member:hover{
+        width: 100px;
+    }
+    .name{
+        margin: 0;
+    }
+    .circle.show{
+        margin:10px;
+        transition: 0.3s ease;
+    }
+    .circle.show:hover{
+        margin:10px;
+    }
+    .circle.show .img-member{    
+        width: 120px;
+        -webkit-filter: none;
+        filter: none;
+    }
+    .circle.show .img-member:hover{
+        width: 130px;
+    }
+}
+
+@media(max-width:400px){
+    .circle{
+        margin:20px;
+    }
+    .circle:hover{
+        margin:20px;
+    }
+    .img-member{
+        width: 80px;
+    }
+    .img-member:hover{
+        width: 80px;
+    }
+    .name{
+        font-size: 1em;
+    }
+    .position{
+        font-size: 0.9em;
+    }
+    .circle.show{
+        margin:0;
+        transition: 0s ease;
+    }
+    .circle.show:hover{
+        margin:0;
+    }
+    .circle.show .img-member{    
+        width: 100px;
+    }
+    .circle.show .img-member:hover{
+        width: 100px;
+    }
+}

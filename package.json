@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name" : "scrumgame",
+=======
+  "name": "scrumgame",
+>>>>>>> dedd3f93673e0c8d88b8ddc91bedd5dd3a742793
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -18,7 +18,7 @@
     border-radius: 50%;
     width: 150px;
     transition: all ease 0.5s;
-    filter: grayscale(30%);
+    filter: grayscale(50%);
 }
 
 .img-member:hover{
@@ -57,6 +57,9 @@
     .img-member:hover{
         width: 100px;
     }
+    .name{
+        margin: 0;
+    }
     .circle.show{
         margin:10px;
         transition: 0.3s ease;
@@ -66,16 +69,15 @@
     }
     .circle.show .img-member{    
         width: 120px;
-        -webkit-filter: drop-shadow(0 0 7px #8e2baf);
-        filter: drop-shadow(0 0 7px #8e2baf);
+        -webkit-filter: none;
+        filter: none;
     }
-    
     .circle.show .img-member:hover{
         width: 130px;
     }
 }
 
-@media(max-width:350px){
+@media(max-width:400px){
     .circle{
         margin:20px;
     }
@@ -88,6 +90,12 @@
     .img-member:hover{
         width: 80px;
     }
+    .name{
+        font-size: 1em;
+    }
+    .position{
+        font-size: 0.9em;
+    }
     .circle.show{
         margin:0;
         transition: 0s ease;
@@ -97,10 +105,7 @@
     }
     .circle.show .img-member{    
         width: 100px;
-        -webkit-filter: drop-shadow(0 0 7px #8e2baf);
-        filter: drop-shadow(0 0 7px #8e2baf);
     }
-    
     .circle.show .img-member:hover{
         width: 100px;
     }

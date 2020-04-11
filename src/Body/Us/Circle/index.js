@@ -19,15 +19,41 @@ export default function Circle(props) {
                     <p className="name">{props.name}</p>
                     <p className="position">{props.position}</p>
                     <div className="social">
-                        <a className="social-item" href="https://www.instagram.com/pupi_marti/" rel="noopener noreferrer" target="_blank">
-                            <span className="icon-instagram"></span>
-                        </a>
-                        <a className="social-item" href="https://www.instagram.com/pupi_marti/" rel="noopener noreferrer" target="_blank">
-                            <span className="icon-facebook"></span>
-                        </a>
-                        <a className="social-item" href="https://www.instagram.com/pupi_marti/" rel="noopener noreferrer" target="_blank">
-                            <span className="icon-linkedin"></span>
-                        </a>
+                        {props.instagram &&
+                            <a className="social-item" href={"https://www.instagram.com/"+props.instagram} rel="noopener noreferrer" target="_blank">
+                                <span className="icon-instagram"></span>
+                            </a>
+                        }
+                        {props.facebook &&
+                            <a className="social-item" href={"https://www.facebook.com/" + props.facebook} rel="noopener noreferrer" target="_blank">
+                                <span className="icon-facebook"></span>
+                            </a>
+                        }
+                        {props.linkedin && 
+                            <a className="social-item" href={"https://www.linkedin.com/in/"+props.linkedin} rel="noopener noreferrer" target="_blank">
+                                <span className="icon-linkedin"></span>
+                            </a>
+                        }
+                        {props.mail &&
+                            <a className="social-item" href={"mailto:"+props.mail} rel="noopener noreferrer" target="_blank">
+                            <span className="icon-mail"></span>
+                            </a>
+                        }
+                        {props.twitter &&
+                            <a className="social-item" href={"https://twitter.com/"+props.twitter} rel="noopener noreferrer" target="_blank">
+                            <span className="icon-twitter"></span>
+                            </a>
+                        }
+                        {props.github &&
+                            <a className="social-item" href={"https://github.com/"+props.github} rel="noopener noreferrer" target="_blank">
+                            <span className="icon-github"></span>
+                            </a>
+                        }
+                        {props.whatsapp &&
+                            <a className="social-item" href={"https://wa.me/"+props.whatsapp} rel="noopener noreferrer" target="_blank">
+                            <span className="icon-whatsapp"></span>
+                            </a>
+                        }
                     </div>
                 </div>
             </div>

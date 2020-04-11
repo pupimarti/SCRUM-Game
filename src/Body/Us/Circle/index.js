@@ -18,7 +18,17 @@ export default function Circle(props) {
                     data-aos-duration="500">
                     <p className="name">{props.name}</p>
                     <p className="position">{props.position}</p>
-                    
+                    <div className="social">
+                        <a className="social-item" href="https://www.instagram.com/pupi_marti/" rel="noopener noreferrer" target="_blank">
+                            <span className="icon-instagram"></span>
+                        </a>
+                        <a className="social-item" href="https://www.instagram.com/pupi_marti/" rel="noopener noreferrer" target="_blank">
+                            <span className="icon-facebook"></span>
+                        </a>
+                        <a className="social-item" href="https://www.instagram.com/pupi_marti/" rel="noopener noreferrer" target="_blank">
+                            <span className="icon-linkedin"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         )

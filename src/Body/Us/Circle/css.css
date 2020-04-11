@@ -4,6 +4,10 @@
     transition: all ease 0.5s;
 }
 
+.circle:hover{
+    margin: 40px;
+}
+
 .name{
     font-size: 1.1em;
     margin-bottom: 0;
@@ -12,6 +16,7 @@
 .position{
     color: #aaa;
     margin: 0;
+    font-size: 1em;
 }
 
 .img-member{
@@ -26,8 +31,24 @@
     cursor: pointer;
 }
 
-.circle:hover{
-    margin: 40px;
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2px;
+}
+
+.social-item{
+    margin:0;
+    padding:0;
+    transition: all 0.5s ease;
+}
+
+.social-item:hover{
+  cursor: pointer;
+  color:#fff;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .circle.show{

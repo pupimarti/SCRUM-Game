@@ -4,7 +4,11 @@ import './css.css';
 
 export default function News() {
   return (
-    <div className="content-section content-width content-section-news">
+    <div className="content-section content-width content-section-news"
+      data-aos="fade-left" 
+      data-aos-offset="300"
+      data-aos-duration="1000" 
+      >
             <h2>Novedades</h2>
             <div className="content-news">
               <New title="El primer modal AA PRUEBA TEXTO MUY LARGO LOREM LOREM" text="Hola"/>

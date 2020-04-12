@@ -1,9 +1,21 @@
 .new-title{
     cursor: pointer;
+    width: 45%;
+    border: 1px solid #ccc;
+    margin:0;
+    padding:5px;
+    overflow:auto;
+    max-height:1.7em;
 }
 
 .new-title:hover{
     color:#ccc;
+}
+
+@media(max-width:800px){
+    .new-title{
+        width: 100%;
+    }
 }
 
 .Modal{
@@ -28,6 +40,11 @@
 .modal-content-new{
     text-align: center;
     width: 100%;
+}
+
+.modal-title{
+    max-height: 1.7em;
+    overflow:auto;
 }
 
 .modal-text{

@@ -1,12 +1,12 @@
-
-.pNews {
-    font-size: 1.2em;
+.content-section-news{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
-.pNews:hover {
-    color: rgba(188, 14, 223, 0.699);
-}
-
-.relleno {
-    padding: 50px;
+.content-news{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
 }

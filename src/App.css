@@ -102,10 +102,10 @@ p{
 }
  
 
-.button.white:hover, .button.transparent:hover{
+.button:hover, .button.transparent:hover {
   color:#fff;
   border-color: #921bb9;
-  background-color: #5c1175;
+  background: #5c1175;
 }
 
 .button.transparent{

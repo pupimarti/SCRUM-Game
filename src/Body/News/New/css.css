@@ -1,0 +1,44 @@
+.new-title{
+    cursor: pointer;
+}
+
+.new-title:hover{
+    color:#ccc;
+}
+
+.Modal{
+    position: fixed; 
+    top: 5vh;
+    left: 5vw;
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid rgb(204, 204, 204); 
+    box-shadow: 0 0 30px #000;
+    background: rgb(255, 255, 255); 
+    border-radius: 4px; 
+    outline: none; 
+    padding: 20px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.modal-content-new{
+    text-align: center;
+    width: 100%;
+}
+
+.modal-text{
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+.modal-close{
+    width: 200px;
+    background: linear-gradient(90deg, #ab31d4 0%, #d81b60 100%);
+    color: #fff;
+}

@@ -7,7 +7,7 @@
     display:flex;
     color:#fff;
     padding-top: 8px;
-    z-index: 10;
+    z-index: 2;
     transition: ease-in 0.3s;
 }
 

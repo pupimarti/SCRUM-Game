@@ -11,10 +11,10 @@ export default function Us() {
         data-aos-duration="1000" >
             <h2>Nuestro equipo</h2>
             <div className="content-members">
-                <Circle img={img} name="Juan Agustín Martí" position="Da ordenes" facebook="pupimarti" instagram="pupi_marti" linkedin="pupimarti"/>
-                <Circle img="https://www.webcampus.uade.edu.ar/Fotos/1/ID_993091.jpg" name="Amietta, Octavio" position="Hace el café" mail="pupi_marti@hotmail.com" github="pupimarti" twitter="pupi_marti"/>
-                <Circle img="https://www.webcampus.uade.edu.ar/Fotos/7/ID_990787.jpg" name="Cretari, Nahuel" position="Sirve agua" whatsapp="5492245427854"/>
-                <Circle img="https://www.webcampus.uade.edu.ar/Fotos/3/ID_992283.jpg" name="Daffada, Agustín" position="Carga el agua"/>
+                <Circle img={img} name="Juan Agustín Martí" position="Desarrollo web" facebook="pupimarti" instagram="pupi_marti" linkedin="pupimarti"/>
+                <Circle img="https://www.webcampus.uade.edu.ar/Fotos/1/ID_993091.jpg" name="Amietta, Octavio" position="Desarrollo web" mail="pupi_marti@hotmail.com" github="pupimarti" twitter="pupi_marti"/>
+                <Circle img={img} name="Pepito Juarez 1" position="Sirve agua" whatsapp="5492245427854"/>
+                <Circle img="https://www.webcampus.uade.edu.ar/Fotos/1/ID_993091.jpg" name="Pepito Juarez 2" position="Carga el agua"/>
             </div>
         </div>
     )

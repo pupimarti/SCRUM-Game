@@ -38,7 +38,7 @@ function App() {
   return (
     <div>
       <Nav />
-      <Header/>
+      <Header edit={true} text1='¡El juego ideal para aprender SCRUM!' />
       <Body />
       <Footer />
     </div>

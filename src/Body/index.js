@@ -4,10 +4,17 @@ import Stores from './Stores';
 import Us from './Us';
 import News from './News';
 
-export default function Body() {
+export default function Body(props) {
     return (
         <div>
-            <WhatItIs />
+            <WhatItIs 
+                edit={props.edit} 
+                title='¿Qué es Scrum Game?'
+                subtitle='Aprende de forma inteligente'
+                text='Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in massa egestas mollis varius; dignissim elementum. Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula ornare.'
+                subtitle2='Súper intuitivo y eficaz'
+                text2='Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in massa egestas mollis varius; dignissim elementum. Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula ornare..'
+                />
             <Stores />
             <Us />
             <News />

@@ -35,11 +35,13 @@ AOS.init({
 
 function App() {
 
+  const edit = false;
+
   return (
     <div>
       <Nav />
-      <Header edit={true} text1='¡El juego ideal para aprender SCRUM!' />
-      <Body />
+      <Header edit={edit} text1='¡El juego ideal para aprender SCRUM!' />
+      <Body edit={edit} />
       <Footer />
     </div>
   );

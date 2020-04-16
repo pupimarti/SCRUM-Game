@@ -5,7 +5,7 @@ html, body{
   overflow-x: hidden;
 }
 
-input{
+input, textarea{
   font-family: 'Baloo Thambi 2', cursive;
 }
 

@@ -30,6 +30,13 @@
     text-align: center;
 }
 
+.sentence.edit{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
 .sentence{
     font-size: 2em;
 }

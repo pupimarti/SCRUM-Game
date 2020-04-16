@@ -5,6 +5,10 @@ html, body{
   overflow-x: hidden;
 }
 
+input, textarea{
+  font-family: 'Baloo Thambi 2', cursive;
+}
+
 .content-width{
   width: 90vw;
   max-width: 1065px;
@@ -16,6 +20,10 @@ html, body{
   display: flex;
   justify-items: center;
   align-items: center;
+}
+
+a{
+  text-decoration: none;
 }
 
 h2{
@@ -98,10 +106,10 @@ p{
 }
  
 
-.button.white:hover, .button.transparent:hover{
+.button:hover, .button.transparent:hover {
   color:#fff;
   border-color: #921bb9;
-  background-color: #5c1175;
+  background: #5c1175;
 }
 
 .button.transparent{

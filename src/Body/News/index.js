@@ -1,147 +1,25 @@
-
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import styled from "styled-components";
-import Modal, { ModalProvider, BaseModalBackground } from "styled-react-modal";
+import React from 'react'
+import New from './New';
 import './css.css';
 
-const StyledModal = Modal.styled`
-  width: 20rem;
-  height: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  opacity: ${props => props.opacity};
-  transition: opacity ease 500ms;
-`;
-
-function FancyModalButton() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [opacity, setOpacity] = useState(0);
-
-  function toggleModal(e) {
-    setIsOpen(!isOpen);
-  }
-
-  function afterOpen() {
-    setTimeout(() => {
-      setOpacity(1);
-    }, 10);
-  }
-
-  function beforeClose() {
-    return new Promise(resolve => {
-      setOpacity(0);
-      setTimeout(resolve, 200);
-    });
-  }
-
-  return (
-  <div className = "displayFlex">    
-    <div className = "displayColumn">
-        <div>
-            <p className ="pNews" onClick={toggleModal}>>Dos estudiantes de Desarrollo de Software se unen al proyecto.</p>
-            <StyledModal
-                isOpen={isOpen}
-                afterOpen={afterOpen}
-                beforeClose={beforeClose}
-                onBackgroundClick={toggleModal}
-                onEscapeKeydown={toggleModal}
-                opacity={opacity}
-                backgroundProps={{ opacity }}
-            >
-                <div>
-                    <h2>Nuevos Integrantes</h2>
-                    <span>Y la rompen daleeeeeeeee!</span>
-                </div>
-                <div>
-                <a href onClick={toggleModal}>Atrás</a>
-                </div>
-            </StyledModal>
-        </div>
-        <div>
-            <p className ="pNews" onClick={toggleModal}>>Meten preso a lider de banda musical conocido como Charly.</p>
-            <StyledModal
-            isOpen={isOpen}
-            afterOpen={afterOpen}
-            beforeClose={beforeClose}
-            onBackgroundClick={toggleModal}
-            onEscapeKeydown={toggleModal}
-            opacity={opacity}
-            backgroundProps={{ opacity }}
-            >
-            <div>
-                <h3>Ultimo Momento</h3>
-                <span>Preso charly daaedda dokadkoa wdadeae </span>
-            </div>
-            {/* <div>
-                <a href onClick={toggleModal}>Atrás</a>
-                </div> */}
-            </StyledModal>
-      </div>
-    </div>
-    <div className = "displayColumn">
-        <div>
-            <p className ="pNews" onClick={toggleModal}>>Dos estudiantes de Desarrollo de Software se unen al proyecto.</p>
-            <StyledModal
-                isOpen={isOpen}
-                afterOpen={afterOpen}
-                beforeClose={beforeClose}
-                onBackgroundClick={toggleModal}
-                onEscapeKeydown={toggleModal}
-                opacity={opacity}
-                backgroundProps={{ opacity }}
-            >
-            <div>
-                    <span>Y la rompen daleeeeeeeee!</span>
-                </div>
-            {/* <div>
-                <a href onClick={toggleModal}>Atrás</a>
-                </div> */}
-            </StyledModal>
-        </div>
-        <div>
-            <p className ="pNews" onClick={toggleModal}>>Meten preso a lider de banda musical conocido como Charly.</p>
-            <StyledModal
-            isOpen={isOpen}
-            afterOpen={afterOpen}
-            beforeClose={beforeClose}
-            onBackgroundClick={toggleModal}
-            onEscapeKeydown={toggleModal}
-            opacity={opacity}
-            backgroundProps={{ opacity }}
-            >
-            <div>
-                <h3>Ultimo Momento</h3>
-                <span>Y la rompen daleeeeeeeee!</span>
-            </div>
-            {/* <div>
-                <a href onClick={toggleModal}>Atrás</a>
-                </div> */}
-            </StyledModal>
-      </div>
-     </div>
-    </div>  
-  );
-}
-
-const FadingBackground = styled(BaseModalBackground)`
-  opacity: ${props => props.opacity};
-  transition: opacity ease 200ms;
-`;
-
 export default function News() {
-    return (
-        
-        <ModalProvider backgroundComponent={FadingBackground}>
-      <div className="content-width">
-        <h2 className = "title">Novedades</h2>
-        <FancyModalButton />
-        <div className ="relleno"></div>
-      </div>
-     </ModalProvider>
-    );
+  return (
+    <div className="content-section content-width content-section-news"
+      data-aos="fade-left" 
+      data-aos-offset="300"
+      data-aos-duration="1000" 
+      >
+            <h2>Novedades</h2>
+            <div className="content-news">
+              <New title="El primer modal AA PRUEBA TEXTO MUY LARGO LOREM LOREM" text="Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas"/>
+              <New title="el segundo modal" text="Modal 2 texto"/>
+              <New title="El tercer modal" text="Hola"/>
+              <New title="el cuarto modal" text="Cuarto modal"/>
+              <New title="El QUINTO modal" text="QUINTO"/>
+              <New title="el SEXTO modal" text="SEXTO modal"/>
+              <New title="El SEPTIMO modal" text="SEPTIMO"/>
+              <New title="el OCTAVO modal" text="OCTAVO modal"/>
+            </div>
+    </div>
+  )
 }
-const rootElement = document.getElementById("root");
-ReactDOM.render(<News />, rootElement);

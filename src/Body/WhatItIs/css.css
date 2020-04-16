@@ -6,6 +6,24 @@
     padding: 50px 0px;
 }
 
+.title input{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 100%;
+}
+
+.textarea{
+    width: 100%;
+    font-size: 1.3em;
+    height: 100%;
+}
+
 .displayFlex {
     display: flex;
     flex-wrap: wrap;

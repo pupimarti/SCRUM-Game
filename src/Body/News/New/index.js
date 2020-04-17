@@ -5,11 +5,16 @@ import './css.css';
 export default function Modal({title, text}) {
 
     const [open, setOpen] = useState(false);
+   
 
     const handleCloseModal = () =>setOpen(false)
     const handleOpenModal = () =>setOpen(true)
 
+   
+
     ReactModal.setAppElement('#root')
+
+   
     return (
         <React.Fragment>
             <h3 className="new-title" onClick={handleOpenModal}>{title}</h3>
@@ -27,4 +32,5 @@ export default function Modal({title, text}) {
              </ReactModal>
         </React.Fragment>
     )
+    
 }

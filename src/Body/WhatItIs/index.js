@@ -17,7 +17,7 @@ export default function WhatIsIt({edit, title, subtitle, subtitle2, text, text2}
         setData({...data, [name]: target.value})
     }
 
-    const handleClickCancel = (e) => {
+    const handleClickCancel = () => {
         handleDefaultProps();
     }
 

@@ -15,7 +15,11 @@ export default function Body(props) {
                 subtitle2='Súper intuitivo y eficaz'
                 text2='Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in massa egestas mollis varius; dignissim elementum. Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula ornare..'
                 />
-            <Stores />
+            <Stores 
+                edit = {props.edit}
+                title='Accede desde cualquier dispositivo'
+                text ='¡Puedes jugar en cualquier lugar y cualquier momento! Descarga nuestra aplicación disponible tanto para Android como para IOS.'
+            />
             <Us />
             <News />
         </div>

@@ -35,7 +35,7 @@ AOS.init({
 
 function App() {
 
-  const edit = true;
+  const edit = false;
 
   return (
     <div>

@@ -17,43 +17,76 @@ export default function Circle(props) {
         setData({...data, [name]: target.value})
     }
 
+    const handleInputSocialChange = (e) => {
+        const target = e.target;
+        const name = target.name;
+        setData(
+            {...data, social: {
+                ...data.social, [name]:{
+                    ...data.social[name], url:target.value
+                }
+            }
+        })
+    }
+
+    const handleInputTypeSocialChange = (e) => {
+        const target = e.target;
+        const name = target.name;
+        setData(
+            {...data, social: {
+                ...data.social, [name]:{
+                    ...data.social[name], red:target.value
+                }
+            }
+        })
+    }
+
     const handleClickCancel = () => {
         handleDefaultProps();
     }
+
         const redes = []; //div
-        for(const red in props.social){
+
+        const pushRed = (id, url, red) => {
             if(props.edit)
-                redes.push(
-                    <div key={redes.length} className="red-content-edit">
-                        <input 
-                        type="text" 
-                        name={redes.length} 
-                        value={data.social[red]} 
-                        className="red-input-edit"
-                        placeholder="URL"
-                        />
-                        <select className="red-select-edit" 
-                            value={red}
-                            name={redes.length}
-                        >
-                            <option value="none">Vacío</option>
-                            <option value="facebook">Facebook</option>
-                            <option value="instagram">Instagram</option>
-                            <option value="linkedin">Linkedin</option>
-                            <option value="github">Github</option>
-                            <option value="mail">E-mail</option>
-                            <option value="twitter">Twitter</option>
-                            <option value="whatsapp">Whatsapp</option>
-                        </select>
-                    </div>
-                )
-            else
             redes.push(
-                <a key={props.social[red]} className="social-item" href={props.social[red]} rel="noopener noreferrer" target="_blank">
-                    <span className={`icon-${red}`}></span>
-                </a>
+                <div key={id} className="red-content-edit">
+                    <input 
+                    type="text" 
+                    name={id} 
+                    value={data.social[id].url} 
+                    onChange={handleInputSocialChange}
+                    className="red-input-edit"
+                    placeholder="URL"
+                    />
+                    <select className="red-select-edit" 
+                        value={data.social[id].red}
+                        name={id}
+                        onChange={handleInputTypeSocialChange}
+                    >
+                        <option value="none">Vacío</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="linkedin">Linkedin</option>
+                        <option value="github">Github</option>
+                        <option value="mail">E-mail</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="whatsapp">Whatsapp</option>
+                    </select>
+                </div>
             )
+            else if(red !== 'none')
+                redes.push(
+                    <a key={id} className="social-item" href={url} rel="noopener noreferrer" target="_blank">
+                        <span className={`icon-${red}`}></span>
+                    </a>
+                )
         }
+
+        props.social.forEach(red => {
+                pushRed(red.id, red.url, red.red);
+        });
+        
 
     if(props.edit)
         return(

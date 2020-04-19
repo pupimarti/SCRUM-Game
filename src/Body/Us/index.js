@@ -15,48 +15,84 @@ export default function Us(props) {
                 img={img} 
                 name="Juan Agustín Martí" 
                 position="Desarrollo web" 
-                social={
+                social={[
                     {
-                        "facebook":"https://www.facebook.com/pupimarti",
-                        "instagram":"https://www.instagram.com/pupi_marti",
-                        "linkedin":"https://www.linkedin.com/in/pupimarti"
+                        id: 0,
+                        red: "facebook",
+                        url: "https://www.facebook.com/pupimarti"
+                    },{
+                        id: 1,
+                        red: "instagram",
+                        url: "https://www.instagram.com/pupi_marti"
+                    },{
+                        id: 2,
+                        red: "linkedin",
+                        url: "https://www.linkedin.com/in/pupimarti"
                     }
-                }
+                ]}
                 edit={props.edit}
                 />
                 <Circle 
                 img="https://www.webcampus.uade.edu.ar/Fotos/1/ID_993091.jpg" 
                 name="Amietta, Octavio" 
                 position="Desarrollo web" 
-                social={
+                social={[
                     {
-                        "mail":"pupi_marti@hotmail.com" ,
-                        "github":"pupimarti" ,
-                        "twitter":"pupi_marti"
+                        id: 0,
+                        red: "twitter",
+                        url: "https://www.facebook.com/pupimarti"
+                    },{
+                        id: 1,
+                        red: "github",
+                        url: "https://www.instagram.com/pupi_marti"
+                    },{
+                        id: 2,
+                        red: "whatsapp",
+                        url: "https://www.linkedin.com/in/pupimarti"
                     }
-                }
+                ]}
                 edit={props.edit}
                 />
                 <Circle 
                 img={img} 
                 name="Pepito Juarez 1" 
                 position="Sirve agua" 
-                social={
+                social={[
                     {
-                    "whatsapp":"5492245427854"
+                        id: 0,
+                        red: "twitter",
+                        url: "https://www.facebook.com/pupimarti"
+                    },{
+                        id: 1,
+                        red: "github",
+                        url: "https://www.instagram.com/pupi_marti"
+                    },{
+                        id: 2,
+                        red: "whatsapp",
+                        url: "https://www.linkedin.com/in/pupimarti"
                     }
-                }
+                ]}
                 edit={props.edit}
                 />
                 <Circle 
                 img="https://www.webcampus.uade.edu.ar/Fotos/1/ID_993091.jpg" 
                 name="Pepito Juarez 2" 
                 position="Carga el agua"
-                social={
+                social={[
                     {
-                        
+                        id: 0,
+                        red: "none",
+                        url: ""
+                    },{
+                        id: 1,
+                        red: "none",
+                        url: ""
+                    },{
+                        id: 2,
+                        red: "none",
+                        url: ""
                     }
-                }
+                ]}
                 edit={props.edit}
                 />
             </div>

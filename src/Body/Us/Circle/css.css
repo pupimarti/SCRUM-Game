@@ -20,10 +20,11 @@
 }
 
 .img-member{
-    border-radius: 50%;
+    border-radius: 20px;
     width: 150px;
     transition: all ease 0.5s;
     filter: grayscale(50%);
+    box-shadow: 0 0 30px #412437;
 }
 
 .img-member:hover{
@@ -57,8 +58,8 @@
 
 .circle.show .img-member{    
     width: 200px;
-    -webkit-filter: drop-shadow(0 0 7px #400a52);
-    filter: drop-shadow(0 0 7px #400a52);
+    filter: none;
+    box-shadow: 0 0 20px #960b68;
 }
 
 .circle.show .img-member:hover{

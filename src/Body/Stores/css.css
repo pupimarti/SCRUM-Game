@@ -12,7 +12,18 @@
 
 .phones{
     width: 50%;
+    position: relative;
+    left: 125px;
+
+    transition: transform 1s ease;
+    
 }
+
+.phones:hover {
+    transform: scale(1.05);
+}
+
+
 
 .textarea{
     width: 80%;
@@ -20,7 +31,7 @@
     height: 100%;
 }
 
-@media (max-width:800px){
+@media (max-width:1000px){
     .content-description{
         justify-content: center;
         width: 100%;

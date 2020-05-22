@@ -9,6 +9,9 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import './icons.css';
 
 
+
+
+
 // ..
 AOS.init({
   // Global settings:
@@ -35,13 +38,16 @@ AOS.init({
 
 function App() {
 
-  const edit = true;
+  
+
+  const edit = false;
 
   return (
     <div>
       <Nav />
       <Header edit={edit} text1='¡El juego ideal para aprender SCRUM!' />
       <Body edit={edit} />
+      
       <Footer />
     </div>
   );

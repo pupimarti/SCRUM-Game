@@ -2,11 +2,14 @@ import React, {useState} from 'react'
 import ReactModal from 'react-modal';
 import './css.css';
 
+
+
+
 export default function Modal({edit, title, text}) {
 
     const [open, setOpen] = useState(false);
    
-
+    
     const handleCloseModal = () =>setOpen(false)
     const handleOpenModal = () =>setOpen(true)
 
@@ -24,10 +27,14 @@ export default function Modal({edit, title, text}) {
 
     const handleClickCancel = () => {
         handleDefaultProps();
+        handleCloseModal();
     }
-   
+
+ 
 
     ReactModal.setAppElement('#root')
+
+    
 
    if (edit)
     return (
@@ -58,8 +65,13 @@ export default function Modal({edit, title, text}) {
                     />
               </div>
       
-              <button className="button modal-close" onClick={handleCloseModal}>GUARDAR SECCIÓN</button>
-              <button className="button modal-close" onClick={handleClickCancel && handleCloseModal}>CANCELAR</button>
+              <button className="button modal-close" onClick={handleInputChange}>GUARDAR SECCIÓN</button>
+              <button className="button modal-close" onClick={handleClickCancel} >CANCELAR</button>
+              
+
+              
+              
+                    
               
              </ReactModal>
             
